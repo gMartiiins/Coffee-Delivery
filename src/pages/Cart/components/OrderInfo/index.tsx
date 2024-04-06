@@ -42,7 +42,7 @@ export function OrderInfo(){
                         <p>{ProductsCart.length > 0 ? `R$ ${calculateCartTotalDelivery().toLocaleString('pt-BR', { minimumFractionDigits: 2 })}` : 'R$ 0,00'}</p>
                     </ValueBox3>
                 </ConfirmPayContainer>
-                <NavLink to={isPedidoConfirmado ? "/PedidoConfirmado" : ""} title="Confirmar Pedido">
+                <NavLink to={isPedidoConfirmado ? "/Coffee-Delivery/PedidoConfirmado" : ""} title="Confirmar Pedido">
                     <ConfirmButton type="submit" disabled={!isPedidoConfirmado}  onClick={handleConfirmButtonClick} className={isPedidoConfirmado ? '' : 'disabled'}>
                         <p>Confirmar Pedido</p>
                     </ConfirmButton>

@@ -13,7 +13,7 @@ export function Header() {
     return (
 
         <HeaderContainer>
-            <NavLink to="/" title="Coffee Delivery">
+            <NavLink to="/Coffee-Delivery" title="Coffee Delivery">
                 <button>
                     <img src={Logo} alt="" />
                 </button>
@@ -22,13 +22,13 @@ export function Header() {
                 <LocalContainer>
                     <MapPin
                         size={22} 
-                    weight="fill" />
+                        weight="fill" />
                     Goioerê, PR
                 </LocalContainer>
                     
                     
                 <nav>
-                    <NavLink to="/Cart" title="Seu Carrinho">
+                    <NavLink to="/Coffee-Delivery/Cart" title="Seu Carrinho">
                         {ProductsCart.length > 0 && (   
                             <NumberItens>
                                 <span>{ProductsCart.reduce((total, item) => total + item.amount, 0)}</span> 

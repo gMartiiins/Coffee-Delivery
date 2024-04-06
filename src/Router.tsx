@@ -7,10 +7,11 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<DefaultLayout />}>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/Cart" element={<Cart/>}></Route>
-          <Route path="/PedidoConfirmado" element={<PedidoConfirmado/>}></Route> 
+          <Route path="/Coffee-Delivery/" element={<Home/>}></Route> 
+          <Route path="/Coffee-Delivery/Cart" element={<Cart/>}></Route>
+          <Route path="/Coffee-Delivery/PedidoConfirmado" element={<PedidoConfirmado/>}></Route> 
       </Route>
+         
     </Routes>
   )
 }

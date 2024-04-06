@@ -1,8 +1,7 @@
 import { useContext } from 'react';
 import { ProductContext } from '../../../../contexts/ProductContext';
 import { AmoutCartContainer, AmoutContainer, ButtonAddCart, ButtonLess, ButtonPlus, CoffeeContainer, FooterContainer, NickContainer, ValorContainer } from './styles';
-import { Minus, Plus } from 'phosphor-react';
-import ImgCart from '../../../../assets/icons/ImgCart.svg' 
+import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react';
 
 export function Product() {
    
@@ -43,7 +42,11 @@ export function Product() {
                                 </ButtonPlus>
                             </AmoutContainer>
                             <ButtonAddCart type='button'  onClick={() => handleAddToCart(product)}>
-                                <img className='shoppingCart' src={ImgCart} alt="Adicionar ao Carrinho" />
+                                <ShoppingCartSimple
+                                    size={22} 
+                                    weight="fill" 
+                                    color='white'
+                                />
                             </ButtonAddCart>
                         </AmoutCartContainer>
                     </FooterContainer>

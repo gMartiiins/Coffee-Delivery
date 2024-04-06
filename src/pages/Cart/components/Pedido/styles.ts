@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const FraseNoItems = styled.text`
+export const FraseNoItems = styled.span`
 display: flex;
 align-items: center;
 justify-content: center;
@@ -90,7 +90,7 @@ export const ButtonPlus = styled(BaseButtons)`
         color: ${(props) => props.theme['purple-dark']};
     }
 `
-export const RemoveButton = styled.button`
+export const RemoveItem = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;

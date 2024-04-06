@@ -143,8 +143,4 @@ export const ButtonAddCart = styled.button`
   &:hover{
     background-color: ${(props) => props.theme['purple']}
   }
-img[src*="ImgCart"] {
-  width: 19.74px;
-  height: 17.88px;
-}
 `

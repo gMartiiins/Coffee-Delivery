@@ -127,7 +127,7 @@ function handleAddToCart(product: Product) {
 }
 
 const handleRemoveFromCart = (indexToRemove: number) => {
-  const updatedCart = [...ProductsCart]; 
+  const updatedCart = [...ProductsCart];
   updatedCart.splice(indexToRemove, 1);
   setProductsCart(updatedCart); 
 };

@@ -1,5 +1,5 @@
 
-import { AmoutContainer, ButtonLess, DetalhesContainer1, DetalhesContainer2, DetalhesContainer3, FraseNoItems, ImageBox, Product, ProductContainer, RemoveButton, ValuePedido } from './styles'
+import { AmoutContainer, ButtonLess, DetalhesContainer1, DetalhesContainer2, DetalhesContainer3, FraseNoItems, ImageBox, Product, ProductContainer,  RemoveItem, ValuePedido } from './styles'
 
 import { ButtonPlus } from '../../../Home/components/Product/styles'
 import { Minus, Plus, Trash } from 'phosphor-react'
@@ -8,7 +8,7 @@ import { ProductContext } from '../../../../contexts/ProductContext';
 
 export function Pedido(){
 
-  const { ProductsCart, handleDecreaseCart, handleIncreaseCart, handleRemoveFromCart} = useContext(ProductContext);
+  const { ProductsCart, handleDecreaseCart, handleIncreaseCart, handleRemoveFromCart } = useContext(ProductContext);
 
     return (
       <>
@@ -34,10 +34,10 @@ export function Pedido(){
                             <Plus size={14} weight="bold" />
                           </ButtonPlus>
                         </AmoutContainer>
-                        <RemoveButton onClick={() => handleRemoveFromCart(index)}>
+                        <RemoveItem type="button" onClick={() => handleRemoveFromCart(index)}>
                           <Trash size={16} />
                           <p>Remover</p>
-                        </RemoveButton>
+                        </RemoveItem>
                       </DetalhesContainer3>
                     </DetalhesContainer2>
                   </DetalhesContainer1>

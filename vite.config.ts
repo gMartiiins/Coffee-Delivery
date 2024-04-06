@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Coffee-Delivery"
+  base: "/",
+  build: {
+    outDir: 'dist' // Configura a pasta de saída para 'dist'
+  }
 })
